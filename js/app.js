@@ -99,9 +99,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-  let myMultArr = multiply(2, 3);
-  let myMultArrTwo = multiply(myMultArr[0], 4);
-  return [myMultArrTwo[0], `The numbers 2,3,4 have a product of ${myMultArrTwo[0]}.`];
+  let myMultArr = multiply(multArr[0], multArr[1]);
+  let myMultArrTwo = multiply(myMultArr[0], multArr[2]);
+  return [myMultArrTwo[0], `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${myMultArrTwo[0]}.`];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
